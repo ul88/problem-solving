@@ -20,7 +20,7 @@ void bfs(){
         ll cost = q.front().second;
         q.pop();
         if(cnt == K) break;
-        if(now < 0 || now > L+1) continue;
+        if(now < 0 || now >= L+1) continue;
         if(visit.count(now)) continue;
         visit.insert(now);
         cnt++;
